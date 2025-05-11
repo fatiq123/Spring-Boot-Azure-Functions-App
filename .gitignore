@@ -3,3 +3,7 @@ target/
 .idea/
 *.iml
 local.settings.json
+
+
+# skip azure secrets
+media-web/src/main/resources/application.properties
