@@ -4,6 +4,33 @@ target/
 *.iml
 local.settings.json
 
-
-# skip azure secrets
+# Skip Azure secrets and configuration files
 media-web/src/main/resources/application.properties
+media-functions/src/main/resources/local.settings.json
+media-functions/.azure/default/connections.xml
+**/azure.properties
+**/application-azure.properties
+
+# Azure key files
+**/*.publishsettings
+**/*.azureauth
+**/*.azurecredentials
+
+# Azure Storage emulator
+**/*.sdf
+**/*.mdf
+**/*.ldf
+
+# Azure Function local settings
+**/local.settings.json
+
+# Azure Service Principal credentials
+**/*.azureauth
+**/*.pfx
+**/*.pem
+**/*.key
+
+# Azure connection strings and keys
+**/*connectionstrings.json
+**/*secrets.json
+**/*credentials.json
